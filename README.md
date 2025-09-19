@@ -8,21 +8,35 @@ O trabalho foi dividido em duas etapas principais:
 
 ---
 
-## 📂 Estrutura do Projeto
-producao-gas-natural-1997_2025_ANP/
-│
-├── datasets/ # Arquivos processados em CSV
-│ ├── df_producao_total.csv
-│ ├── df_producao_total_sudeste.csv
-│ └── ...
-│
-├── EDA_producao_gas_natural_1000m3_1997_2025.ipynb # Análise exploratória
-├── MODELOS_producao_gas_natural_1000m3_1997_2025.ipynb # Modelagem e previsão
-└── README.md
+## Estrutura do Projeto
+
+- **datasets/** → Arquivos processados em CSV  
+  - **regiao/** → Produção agregada por região  
+    - `df_producao_total.csv`  
+    - `df_producao_total_sudeste.csv`  
+    - `df_producao_total_norte.csv`  
+    - `df_producao_total_nordeste.csv`  
+    - `df_producao_total_sul.csv`  
+  - **uf/** → Produção agregada por unidade federativa  
+    - `df_amazonas.csv`  
+    - `df_saopaulo.csv`  
+    - `df_parana.csv`  
+    - `df_bahia.csv`  
+    - `df_sergipe.csv`  
+    - `df_alagoas.csv`  
+    - `df_riograndedonorte.csv`  
+    - `df_maranhao.csv`  
+    - `df_ceara.csv`  
+    - `df_riodejaneiro.csv`  
+    - `df_espiritosanto.csv`  
+
+- **EDA_producao_gas_natural_1000m3_1997_2025.ipynb** → Análise exploratória  
+- **MODELOS_producao_gas_natural_1000m3_1997_2025.ipynb** → Modelagem e previsão  
+- **README.md** → Documentação do projeto  
 
 ---
 
-## 🔎 Etapa 1 – EDA (Exploratory Data Analysis)
+## Etapa 1 – EDA (Exploratory Data Analysis)
 
 - **Preparação de ambiente** (importação de bibliotecas e configuração inicial)  
 - **Entendimento e limpeza dos dados** (checagem de nulos, tipos de dados, consistência)  
@@ -34,7 +48,7 @@ producao-gas-natural-1997_2025_ANP/
 
 ---
 
-## 📈 Etapa 2 – Modelagem de Séries Temporais
+## Etapa 2 – Modelagem de Séries Temporais
 
 Modelos planejados/testados:  
 - **Modelos clássicos**  
@@ -48,7 +62,7 @@ Modelos planejados/testados:
 
 ---
 
-## 🚀 Objetivos do Projeto
+## Objetivos do Projeto
 
 - Explorar e entender o comportamento da produção de gás natural no Brasil.  
 - Criar modelos preditivos capazes de projetar a produção futura.  
@@ -57,7 +71,7 @@ Modelos planejados/testados:
 
 ---
 
-## 📊 Principais Insights (até agora)
+## Principais Insights (até agora)
 
 - O Sudeste concentra a maior parte da produção nacional.  
 - Existem variações significativas entre estados produtores (São Paulo, Rio de Janeiro, Amazonas).  
@@ -65,7 +79,7 @@ Modelos planejados/testados:
 
 ---
 
-## 🔧 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Python** (pandas, numpy, matplotlib, seaborn)  
 - **Statsmodels** (ARIMA, SARIMA, Holt-Winters)  
@@ -75,14 +89,14 @@ Modelos planejados/testados:
 
 ---
 
-## 📌 Próximos Passos
+## Próximos Passos
 
 - Concluir implementação de todos os modelos.  
 - Criar comparativo de métricas em tabela e gráficos.    
 
 ---
 
-## 📚 Fonte dos Dados
+## Fonte dos Dados
 
 Os dados são disponibilizados pela **Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP)** e estão acessíveis no [portal oficial da ANP](https://www.gov.br/anp/).  
 
